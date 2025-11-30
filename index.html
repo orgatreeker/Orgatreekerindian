@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart finance. Simple habits. Better life. Organise your money beautifully with Orgatreeker budget template.">
+    <meta name="keywords" content="money, budget, finance, budget template, financial planning">
+    <meta name="author" content="Orgatreeker">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Budget Template | Orgatreeker">
+    <meta property="og:description" content="Smart finance. Simple habits. Better life.">
+    <meta property="og:image" content="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/publication/logo/8e936d54-6bde-4d58-95be-ab6b53f4cd82/Gemini_Generated_Image_sai5aksai5aksai5.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Budget Template | Orgatreeker">
+    <meta name="twitter:description" content="Smart finance. Simple habits. Better life.">
+    <meta name="twitter:creator" content="@orgatreeker">
+    
+    <title>Budget Template | Orgatreeker - Organise Your Money Beautifully</title>
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inconsolata', monospace;
+            line-height: 1.6;
+            color: #2C3E50;
+            background-color: #F6F9FC;
+        }
+        
+        /* Import Inconsolata Font */
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+        
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background-color: #FFFFFF;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2C3E50;
+            margin-bottom: 20px;
+            font-family: 'Inconsolata', monospace;
+        }
+        
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 68, 255, 0.1);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #2C3E50;
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-family: 'Inconsolata', monospace;
+        }
+        
+        .divider {
+            border: none;
+            border-top: 1px solid #D1D8E0;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+        
+        /* CTA Button - Blue Brand Color */
+        .cta-button {
+            display: inline-block;
+            background-color: #0044FF;
+            color: #FFFFFF;
+            padding: 18px 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-family: 'Inconsolata', monospace;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 68, 255, 0.3);
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background-color: #0033CC;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 68, 255, 0.4);
+        }
+        
+        .cta-attention {
+            display: inline-block;
+            font-size: 1.3rem;
+            color: #FFFFFF;
+            background-color: #0044FF;
+            padding: 18px 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: 'Inconsolata', monospace;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 68, 255, 0.3);
+            cursor: pointer;
+        }
+        
+        .cta-attention:hover {
+            background-color: #0033CC;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 68, 255, 0.4);
+        }
+        
+        /* Social Proof */
+        .social-proof {
+            display: inline-block;
+            background-color: #0044FF;
+            color: #FFFFFF;
+            padding: 12px 25px;
+            margin: 20px 0;
+            font-weight: 700;
+            font-family: 'Inconsolata', monospace;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0, 68, 255, 0.2);
+        }
+        
+        /* Urgency Badge */
+        .urgency-badge {
+            display: inline-block;
+            background-color: #ff4444;
+            color: #ffffff;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin: 10px 0;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #FFFFFF;
+            border-top: 3px solid #0044FF;
+        }
+        
+        .features h2 {
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+            font-family: 'Inconsolata', monospace;
+            color: #0044FF;
+        }
+        
+        .feature-list {
+            text-align: left;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .feature-item {
+            margin-bottom: 30px;
+            font-size: 1rem;
+            padding: 20px;
+            background-color: #F6F9FC;
+            border-radius: 10px;
+            border: 1px solid #D1D8E0;
+            box-shadow: 0 2px 10px rgba(0, 68, 255, 0.08);
+            transition: transform 0.3s ease;
+            font-family: 'Inconsolata', monospace;
+            color: #2C3E50;
+        }
+        
+        .feature-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 4px 15px rgba(0, 68, 255, 0.15);
+            border-color: #0044FF;
+        }
+        
+        .feature-item strong {
+            font-size: 1.1rem;
+            color: #0044FF;
+            font-weight: 700;
+            font-family: 'Inconsolata', monospace;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #F6F9FC;
+        }
+        
+        .testimonials h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: 'Inconsolata', monospace;
+            background-color: #0044FF;
+            color: #FFFFFF;
+            display: inline-block;
+            padding: 15px 30px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 68, 255, 0.3);
+        }
+        
+        .testimonial-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .testimonial-img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(0, 68, 255, 0.2);
+        }
+        
+        /* Trust Indicators */
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #FFFFFF;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin: 20px 10px;
+            border: 2px solid #0044FF;
+            font-family: 'Inconsolata', monospace;
+            color: #2C3E50;
+        }
+        
+        .trust-badge strong {
+            color: #0044FF;
+            font-weight: 700;
+        }
+        
+        /* Before/After Section */
+        .comparison {
+            padding: 60px 20px;
+            background-color: #FFFFFF;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .comparison h3 {
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            font-family: 'Inconsolata', monospace;
+            margin-bottom: 20px;
+            color: #2C3E50;
+        }
+        
+        .comparison-list {
+            list-style: none;
+            margin-bottom: 40px;
+            font-family: 'Inconsolata', monospace;
+        }
+        
+        .comparison-list li {
+            padding: 10px 0;
+            font-size: 1rem;
+            color: #2C3E50;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #F6F9FC;
+            border-top: 3px solid #0044FF;
+        }
+        
+        .pricing h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            font-family: 'Inconsolata', monospace;
+            margin-bottom: 20px;
+            color: #0044FF;
+        }
+        
+        .pricing-subtitle {
+            font-size: 1.2rem;
+            font-family: 'Inconsolata', monospace;
+            margin-bottom: 20px;
+            color: #2C3E50;
+        }
+        
+        .limited-offer {
+            font-size: 1.1rem;
+            margin: 20px 0;
+            display: inline-block;
+            background-color: #ff4444;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+        
+        .old-price {
+            text-decoration: line-through;
+            font-size: 1.8rem;
+            font-family: 'Inconsolata', monospace;
+            color: #D1D8E0;
+        }
+        
+        .new-price {
+            font-size: 4rem;
+            font-weight: 700;
+            font-family: 'Inconsolata', monospace;
+            color: #0044FF;
+            margin: 20px 0;
+        }
+        
+        .savings-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #00cc66 0%, #00aa55 100%);
+            color: #ffffff;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .feature-checklist {
+            text-align: left;
+            max-width: 600px;
+            margin: 30px auto;
+            list-style: none;
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid #D1D8E0;
+            box-shadow: 0 4px 20px rgba(0, 68, 255, 0.1);
+        }
+        
+        .feature-checklist li {
+            padding: 12px 0;
+            font-size: 1.05rem;
+            font-family: 'Inconsolata', monospace;
+            color: #2C3E50;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #D1D8E0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 15px;
+            background-color: #F6F9FC;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: 'Inconsolata', monospace;
+            color: #2C3E50;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question:hover {
+            background-color: #FFFFFF;
+            border-left: 4px solid #0044FF;
+        }
+        
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-toggle.active {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            font-family: 'Inconsolata', monospace;
+            color: #2C3E50;
+            background-color: #FFFFFF;
+        }
+        
+        .faq-answer.active {
+            padding: 15px;
+            max-height: 200px;
+        }
+        
+        /* Footer */
+        .footer {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #2C3E50;
+            color: #FFFFFF;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-family: 'Inconsolata', monospace;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #0044FF;
+        }
+        
+        .footer-links {
+            margin: 20px 0;
+        }
+        
+        .footer-links a {
+            color: #D1D8E0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+            font-family: 'Inconsolata', monospace;
+        }
+        
+        .footer-links a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            color: #D1D8E0;
+            font-family: 'Inconsolata', monospace;
+            margin-top: 20px;
+        }
+        
+        /* Video Section */
+        .video-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #FFFFFF;
+            border-top: 3px solid #0044FF;
+        }
+        
+        .video-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: 'Inconsolata', monospace;
+            color: #0044FF;
+            margin-bottom: 30px;
+        }
+        
+        .video-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 68, 255, 0.2);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            /* Hero Section */
+            .hero {
+                padding: 40px 15px 30px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+                line-height: 1.3;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            
+            .hero-image {
+                margin: 20px 0;
+            }
+            
+            /* Buttons */
+            .cta-button,
+            .cta-attention {
+                padding: 15px 30px;
+                font-size: 1rem;
+                width: 90%;
+                max-width: 300px;
+            }
+            
+            .social-proof {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+            
+            .urgency-badge {
+                font-size: 0.85rem;
+                padding: 6px 15px;
+            }
+            
+            /* Video Section */
+            .video-section {
+                padding: 40px 15px;
+            }
+            
+            .video-section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            
+            /* Features Section */
+            .features {
+                padding: 40px 15px;
+            }
+            
+            .features h2 {
+                font-size: 1.5rem;
+                margin-bottom: 30px;
+            }
+            
+            .feature-item {
+                padding: 15px;
+                font-size: 0.95rem;
+                margin-bottom: 20px;
+            }
+            
+            .feature-item strong {
+                font-size: 1rem;
+            }
+            
+            /* Testimonials */
+            .testimonials {
+                padding: 40px 15px;
+            }
+            
+            .testimonials h2 {
+                font-size: 1.6rem;
+                padding: 12px 20px;
+                margin-bottom: 30px;
+            }
+            
+            .testimonial-grid {
+                gap: 15px;
+            }
+            
+            /* Trust Badges */
+            .trust-badge {
+                padding: 12px 15px;
+                margin: 10px 5px;
+                font-size: 0.9rem;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            /* Comparison Section */
+            .comparison {
+                padding: 40px 15px;
+            }
+            
+            .comparison h3 {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+            }
+            
+            .comparison-list li {
+                font-size: 0.95rem;
+                padding: 8px 0;
+            }
+            
+            /* Pricing Section */
+            .pricing {
+                padding: 40px 15px;
+            }
+            
+            .pricing h2 {
+                font-size: 1.8rem;
+            }
+            
+            .pricing-subtitle {
+                font-size: 1rem;
+            }
+            
+            .old-price {
+                font-size: 1.5rem;
+            }
+            
+            .new-price {
+                font-size: 3rem;
+            }
+            
+            .limited-offer {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+            
+            .savings-badge {
+                font-size: 0.9rem;
+                padding: 6px 15px;
+            }
+            
+            .feature-checklist {
+                padding: 20px;
+                font-size: 0.95rem;
+            }
+            
+            .feature-checklist li {
+                padding: 10px 0;
+                font-size: 1rem;
+            }
+            
+            /* FAQ Section */
+            .faq {
+                padding: 40px 15px;
+            }
+            
+            .faq h2 {
+                font-size: 1.6rem;
+                margin-bottom: 30px;
+            }
+            
+            .faq-question {
+                padding: 12px;
+                font-size: 0.95rem;
+            }
+            
+            .faq-answer {
+                font-size: 0.9rem;
+            }
+            
+            /* Footer */
+            .footer {
+                padding: 30px 15px;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .footer-links a {
+                margin: 0;
+            }
+            
+            /* Container */
+            .container {
+                padding: 0 15px;
+            }
+        }
+        
+        /* Extra Small Devices */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 0.95rem;
+            }
+            
+            .new-price {
+                font-size: 2.5rem;
+            }
+            
+            .cta-button,
+            .cta-attention {
+                padding: 12px 25px;
+                font-size: 0.95rem;
+            }
+            
+            .feature-item {
+                font-size: 0.9rem;
+            }
+            
+            .trust-badge {
+                font-size: 0.85rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Organise your money, beautifully</h1>
+            <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.001.png" alt="Orgatreeker Budget Template Dashboard" class="hero-image">
+            <p class="hero-subtitle">Because your financial life deserves clarity — not chaos.</p>
+            <hr class="divider">
+            <a href="#pricing" class="cta-attention">See How It Works ↓</a>
+            <br><br>
+            <span class="social-proof">⭐⭐⭐⭐⭐ 4.9/5 from 123,539 Users</span>
+            <br>
+            <span class="urgency-badge">🔥 75% OFF - Limited Time Only!</span>
+        </div>
+    </section>
+    
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2>See It In Action</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aGtFJtfBGP0?si=lWDTjoyfQng3BTpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Everything you need to master your money — in one place.</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    ✅ <strong>Annual Overview</strong><br>
+                    12 months of your financial life, summarized with clean insights.
+                </div>
+                
+                <div class="feature-item">
+                    ✅ <strong>Monthly Dashboard</strong><br>
+                    Your income, spending, savings, and category totals — beautifully visual.
+                </div>
+                
+                <div class="feature-item">
+                    ✅ <strong>50/30/20 Automation</strong><br>
+                    No thinking. No formulas. Your money auto-splits into Needs, Wants, and Savings.
+                </div>
+                
+                <div class="feature-item">
+                    ✅ <strong>Smart Expense Tracker</strong><br>
+                    Enter once → updates everywhere. Simple, fast, and consistent.
+                </div>
+                
+                <div class="feature-item">
+                    ✅ <strong>Net Worth Calculator</strong><br>
+                    Track your assets, debts, loans, and real financial growth.
+                </div>
+                
+                <div class="feature-item">
+                    ✅ <strong>Smart Bill Calendar</strong><br>
+                    Never forget an EMI, subscription, or due date again.
+                </div>
+                
+                <div class="feature-item">
+                    ✅ <strong>Sinking Funds</strong><br>
+                    Plan future expenses without stress — vacations, repairs, anything.
+                </div>
+                
+                <div class="feature-item">
+                    ✅ <strong>Debt Tracker</strong><br>
+                    Know exactly when you'll finish paying off debt.
+                </div>
+                
+                <div class="feature-item">
+                    ✅ <strong>Bonus: No-Spend Challenge</strong><br>
+                    A gamified way to boost your savings each month.
+                </div>
+                
+                <p style="margin-top: 30px; font-weight: bold;">In total: 22 interconnected tabs built to make your life easier.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Real People. Real Results.</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; color: #333;">Join 123,539+ users who transformed their financial lives</p>
+            
+            <!-- Trust Badges -->
+            <div style="margin-bottom: 40px;">
+                <div class="trust-badge">
+                    <span>✅</span>
+                    <div><strong>30-Day</strong> Money Back Guarantee</div>
+                </div>
+                <div class="trust-badge">
+                    <span>🔒</span>
+                    <div><strong>Secure</strong> Instant Download</div>
+                </div>
+                <div class="trust-badge">
+                    <span>⚡</span>
+                    <div><strong>Lifetime</strong> Access & Updates</div>
+                </div>
+            </div>
+            
+            <div class="testimonial-grid">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.002.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.003.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.004.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.005.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.006.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.007.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.008.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.009.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.010.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.011.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.012.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.013.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.014.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.015.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.016.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.017.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.018.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.019.jpeg" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.020.png" alt="User Testimonial" class="testimonial-img">
+                <img src="images/Aspose.Words.e878aafb-f8e2-4325-a27d-7ad1a5e40692.021.png" alt="User Testimonial" class="testimonial-img">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Before/After Comparison Section -->
+    <section class="comparison">
+        <h3>Before Orgatreeker</h3>
+        <ul class="comparison-list">
+            <li>❌ You overspend without realizing</li>
+            <li>❌ You forget bills</li>
+            <li>❌ You don't know where money went</li>
+            <li>❌ You feel guilty at month-end</li>
+            <li>❌ You save "whatever is left" (which is usually nothing)</li>
+        </ul>
+        
+        <h3>After Orgatreeker</h3>
+        <ul class="comparison-list">
+            <li>✅ You track everything in minutes</li>
+            <li>✅ You save with intention</li>
+            <li>✅ You know your spending triggers</li>
+            <li>✅ You fix mistakes fast</li>
+            <li>✅ You feel calm and confident about your money</li>
+        </ul>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Get Lifetime Access Today</h2>
+            <p class="pricing-subtitle">One-time payment. No subscription. Forever Yours.</p>
+            <p class="limited-offer">🔥 Limited Time Launch Offer 🔥</p>
+            <p class="old-price">$199</p>
+            <p class="new-price">$49</p>
+            <p class="savings-badge">💰 Save $150 Today!</p>
+            
+            <ul class="feature-checklist">
+                <li>✅ 22+ linked tabs</li>
+                <li>✅ 50/30/20 automation (customisation)</li>
+                <li>✅ Lifetime access & free updates</li>
+                <li>✅ Step-by-step tutorial</li>
+                <li>✅ Bonus: No-Spend Challenge</li>
+                <li>✅ Annual & Monthly Dashboards</li>
+                <li>✅ Expense Tracker & Smart Calendar</li>
+                <li>✅ Net Worth & Debt Tracker</li>
+            </ul>
+            
+            <hr class="divider">
+            
+            <a href="https://checkout.dodopayments.com/buy/pdt_6uVFgRmLEJS7pmza7QxaV?quantity=1&redirect_url=https://thanks.orgatreeker.com%2F" class="cta-button">🎯 Yes! I Want My Budget Template Now →</a>
+            
+            <p style="margin-top: 20px; font-size: 1.05rem;">🔒 Secure checkout • ⚡ Instant access • 🌍 Works worldwide</p>
+            <p style="margin-top: 10px; color: #ff4444; font-weight: bold;">⏰ Only 27 copies left at this price!</p>
+            <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">Join 123,539+ satisfied customers who already transformed their finances</p>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2rem;">Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>Do I need Excel skills?</span>
+                <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+                No, it's beginner friendly, just type your numbers
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>Can I use it on my phone?</span>
+                <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+                Yes, works perfectly in Google Sheets mobile app
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>Can I customise categories?</span>
+                <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+                Absolutely, add or remove any categories you want
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>How do I receive it?</span>
+                <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+                Instantly, Google Sheets download link after payment
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>Refund policy?</span>
+                <span class="faq-toggle">▼</span>
+            </div>
+            <div class="faq-answer">
+                Because this is a digital product with instant download, we cannot offer refunds, but we can provide you the best help and support
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://x.com/orgatreeker" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://www.linkedin.com/company/orgatreeker" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/orgatreeker" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.youtube.com/@Orgatreeker8" target="_blank" rel="noopener">YouTube</a>
+        </div>
+        
+        <div class="footer-links">
+            <a href="https://beehiiv.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+            <a href="https://beehiiv.com/tou" target="_blank" rel="noopener">Terms of Use</a>
+        </div>
+        
+        <p class="copyright">© 2025 Orgatreeker. All rights reserved.</p>
+    </footer>
+    
+    <!-- JavaScript for FAQ Accordion -->
+    <script>
+        // FAQ Accordion
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const toggle = element.querySelector('.faq-toggle');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            document.querySelectorAll('.faq-toggle').forEach(item => {
+                if (item !== toggle) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
